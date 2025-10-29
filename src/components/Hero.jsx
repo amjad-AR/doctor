@@ -19,8 +19,8 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-w-full h-screen flex items-center p-40 gap-10">
-      <div className="left_div w-[40%] flex flex-col gap-7">
+    <section className="min-w-full h-screen flex items-center p-20 gap-10">
+      <div className="left_div w-[50%] flex flex-col gap-7">
         <h1 className="text-6xl font-bold text-[#192655]">
           Your Health Always Comes First.
         </h1>
@@ -38,9 +38,9 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className="relative w-[60%] h-full flex justify-center items-center">
+      <div className="relative w-[40%] h-full flex justify-center items-center">
         <div className="w-full h-full flex justify-center items-center">
-          <div className="bg-[url('img_doctor_bac.png')] bg-cover w-[40%] h-[80%] m-auto flex justify-center items-center overflow-hidden rounded-xl">
+          <div className="bg-[url('img_doctor_bac.png')] bg-cover w-[60%] h-[80%] m-auto flex justify-center items-center overflow-hidden rounded-xl">
             <AnimatePresence mode="wait">
               <motion.div
                 key={slides[current]}
@@ -54,7 +54,7 @@ const Hero = () => {
                 <img
                   src={slides[current]}
                   alt={`Slide ${current}`}
-                  className="w-[200%]"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
             </AnimatePresence>

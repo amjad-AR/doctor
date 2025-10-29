@@ -7,16 +7,17 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #fff;
+  background-color: #fcfcfc;
+ 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --Dark_Blue: #192655
-  --Light_Blue: #46AADF
-  --White: #ffffff
+  --Dark_Blue: #192655;
+  --Light_Blue: #46AADF;
+  --White: #ffffff;
 }
 
 
@@ -59,6 +60,8 @@ button:hover {
   transition: all 0.3s ease-in-out;
   background-color: #1d8b31;
 }
+
+
 
 /* */
 /* */
