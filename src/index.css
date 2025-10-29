@@ -13,6 +13,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --Dark_Blue: #192655
+  --Light_Blue: #46AADF
+  --White: #ffffff
 }
 
 
@@ -29,7 +33,33 @@
   }
 }
 
+.link:hover{
+  color: #58dc5c;
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
 
-/* Dark Blue: #192655*/
-/* Light Blue: #46AADF*/
-/* White: #fff*/
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #58dc5c;
+  transition: width 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+
+
+button:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+  background-color: #1d8b31;
+}
+
+/* */
+/* */
+/* */

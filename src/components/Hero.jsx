@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Hero = () => {
@@ -13,7 +12,6 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Variants للحركة
   const variants = {
     enter: { opacity: 0, x: 50, scale: 0.95 },
     center: { opacity: 1, x: 0, scale: 1 },
@@ -21,9 +19,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-w-full min-h-sceen h-screen flex items-center p-10 gap-10">
-      <div className="left_div w-[50%] flex flex-col gap-7 ">
-        <h1 className="text-6xl font-bold text-[#192655] ">
+    <section className="min-w-full h-screen flex items-center p-40 gap-10">
+      <div className="left_div w-[40%] flex flex-col gap-7">
+        <h1 className="text-6xl font-bold text-[#192655]">
           Your Health Always Comes First.
         </h1>
         <p className="text-lg text-gray-500">
@@ -35,37 +33,32 @@ const Hero = () => {
           your family to create a customized care plan that fits your unique
           needs and preferences.
         </p>
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-md w-[40%]">
+        <button className="bg-blue-600 text-white px-6 py-3 rounded-md w-[30%]">
           Book Appointment
         </button>
       </div>
 
-          <div className="relative w-[50%] h-full flex justify-center items-center">
-              
-              <div className=" w-full h-full flex justify-center items-center">
-                  <div className="relative w-full h-full flex justify-center items-center">
-                      
-          <img
-            src="img_doctor_bac.png"
-            alt="Hero Background"
-            className="w-[50%] h-auto"
-          />
-
-          <AnimatePresence>
-            <motion.img
-              key={slides[current]}
-              src={slides[current]}
-              alt={`Slide ${current}`}
-              className="absolute top-30 left-60 w-[40%] h-auto"
-              variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{ duration: 1, ease: "easeInOut" }}
-            />
-                  </AnimatePresence>
-                  
-                  </div>
+      <div className="relative w-[60%] h-full flex justify-center items-center">
+        <div className="w-full h-full flex justify-center items-center">
+          <div className="bg-[url('img_doctor_bac.png')] bg-cover w-[40%] h-[80%] m-auto flex justify-center items-center overflow-hidden rounded-xl">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={slides[current]}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.8, ease: "easeInOut" }}
+                className="absolute"
+              >
+                <img
+                  src={slides[current]}
+                  alt={`Slide ${current}`}
+                  className="w-[200%]"
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
       </div>
     </section>
