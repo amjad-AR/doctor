@@ -24,8 +24,8 @@ const TimeWrok = () => {
     },
   ];
   return (
-    <section className=" w-[90%] h-40 justify-self-center ">
-      <div className=" bg-(--Dark_Blue) flex flex-row p-10 justify-between rounded-lg shadow-lg shadow-gray-400">
+    <section className=" w-full h-50  ">
+      <div className="w-[90%] h-full justify-self-center flex flex-row p-10 justify-between rounded-lg  border-white/10 border-2">
         {cardData.map((card) => (
           <TimeWorkCard
             key={card.id}

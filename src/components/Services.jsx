@@ -27,17 +27,17 @@ const Services = () => {
   ];
     return (
       <section className="py-12 min-h-50">
-        <div className="topDiv w-full flex justify-between p-20 items-center">
-          <h2 className="text-3xl font-bold text-black w-[30%]">
+        <div className="topDiv w-full flex flex-col md:flex-row justify-between items-start md:items-center gap-8 px-6 md:px-20 py-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-black md:w-[30%] w-full text-center md:text-left">
             Your health requirements are our first focus.
           </h2>
-          <p className="text-2xl font-bold text-gray-700 w-[40%]">
+          <p className="text-lg md:text-2xl font-semibold text-gray-700 md:w-[40%] w-full text-center md:text-left">
             {" "}
             Our team of skilled medical professionals and aids ensure that you
             get the care you need and deserve.
           </p>
-            </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-20">
+        </div>
+        <div className="w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4 md:px-20">
           {cardData.map((card) => (
             <ServicesCard key={card.id} img={card.img} title={card.title} />
           ))}

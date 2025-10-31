@@ -62,7 +62,7 @@ const Department = () => {
     },
   ];
   return (
-    <section className="w-[90%] justify-self-center p-10 text-(--Dark_Blue) flex flex-col items-start mx-auto my-20">
+    <section className="w-[90%] justify-self-center p-10 text-(--Dark_Mode_BG) flex flex-col items-start mx-auto my-20">
       <h1 className="text-3xl mb-6">Our Department</h1>
       <div className="grid grid-cols-4 gap-4">
         {departments.map((e) => (

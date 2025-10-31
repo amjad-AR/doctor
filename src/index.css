@@ -7,7 +7,9 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #fcfcfc;
+  /* background-color: var(--Dark_Blue); */
+  background-color: #fff9ec;
+  /* background-color: #121212; */
  
 
   font-synthesis: none;
@@ -15,9 +17,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --Dark_Blue: #192655;
-  --Light_Blue: #46AADF;
-  --White: #ffffff;
+--White: #ffffff;
+
+  --Dark_Mode_BG: #121212;
+  --Nav_Color: #251717;
+  --Med_Dark_Mode_BG: #d79898;
+  --Dark_Mode_Text: #e0e0e0;
+}
+
+section{
+  border-radius: 20px;
+  box-shadow: #251717 0px 5px 10px -10px;
+  margin: 20px 0;
 }
 
 
@@ -34,32 +45,8 @@
   }
 }
 
-.link:hover{
-  color: #58dc5c;
-  transform: translateY(-5px);
-  transition: all 0.3s ease-in-out;
-}
-
-.link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #58dc5c;
-  transition: width 0.3s;
-}
-
-.link:hover::after {
-  width: 100%;
-}
 
 
-
-button:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease-in-out;
-  background-color: #1d8b31;
-}
 
 
 

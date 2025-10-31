@@ -1,8 +1,8 @@
-import React from "react";
 import Hero from "../components/Hero.jsx";
 import TimeWrok from "../components/TimeWrok.jsx";
 import Services from "../components/Services.jsx";
 import Department from "../components/Department.jsx";
+import DoctorsSection from "../components/DoctorsSection.jsx";
 
 const Home = () => {
   return (
@@ -11,6 +11,7 @@ const Home = () => {
       <TimeWrok />
       <Services />
       <Department />
+      <DoctorsSection />
     </div>
   );
 };
